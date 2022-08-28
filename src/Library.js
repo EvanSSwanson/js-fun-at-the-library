@@ -33,8 +33,13 @@ for (i = 0; i < shelf.length; i++) {
   }
 }
 
-return checkedOut ? `You have now checked out ${bookTitle} from the ${library.name}`:
-  `Sorry, there are currently no copies of ${bookTitle} available at the ${library.name}`
+if (checkedOut === true) {
+  return `You have now checked out ${bookTitle} from the ${library.name}`
+}
+if (checkedOut === false) {
+  return `Sorry, there are currently no copies of ${bookTitle} available at the ${library.name}`
+}
+
 }
 
 module.exports = {
