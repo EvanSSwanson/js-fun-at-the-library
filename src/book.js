@@ -14,12 +14,12 @@ function buildMainCharacter(name, age, pronouns) {
 function saveReview(statement, listOfReviews) {
   if (listOfReviews.includes(statement) === false) {
   return listOfReviews.push(statement);
-};
+  };
 };
 
 function calculatePageCount(bookTitle) {
-  var pageCount = bookTitle.length * 20
-  return pageCount
+  var pageCount = bookTitle.length * 20;
+  return pageCount;
 };
 
 function writeBook(bookTitle, builtCharacter, bookGenre) {
@@ -29,7 +29,7 @@ function writeBook(bookTitle, builtCharacter, bookGenre) {
     pageCount: bookTitle.length * 20,
     genre: bookGenre
   };
-  return bookObject
+  return bookObject;
 };
 
 function editBook(bookObject) {

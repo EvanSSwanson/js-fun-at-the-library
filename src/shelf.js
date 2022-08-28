@@ -13,14 +13,14 @@ function unshelfBook(bookTitle, shelf) {
 };
 
 function listTitles(shelf) {
-  var titlesList = []
+  var titlesList = [];
   for (var i = 0; i < shelf.length; i++) {
-    var list = shelf[i].title
+    var list = shelf[i].title;
 
-    titlesList.push(list)
-  }
+    titlesList.push(list);
+  };
 
-return titlesList.join(', ')
+return titlesList.join(', ');
 };
 
 
@@ -33,9 +33,9 @@ function searchShelf(shelf, bookTitle) {
         return true;
       } else {
         return false;
-      }
-  }
-}
+    };
+  };
+};
 
 module.exports = {
   shelfBook,
